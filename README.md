@@ -8,15 +8,16 @@ Key Frameworks & Technologies:
 4. Docker: Used for containerizing the application to ensure consistent deployment environments.
 5. Scikit-Learn: Core library used for the underlying predictive model logic.
 
-Project Structure:
-The implementation follows a clear separation of concerns to ensure scalability:
-├── config/             # Configuration management (e.g., city tiers, model paths)
-├── model/              # Serialized model files (.pkl)
-├── schema/             # Pydantic models for request/response validation
-├── app.py              # Main FastAPI application entry point
-├── predict.py          # Logic for loading model and making predictions
-├── Dockerfile          # Instructions for building the container image
-└── requirements.txt    # List of project dependencies
+##  Project Structure
+\```text
+├── config/             # Configuration files
+├── model/              # Trained .pkl files
+├── schema/             # Pydantic validation models
+├── app.py              # FastAPI main entry point
+├── predict.py          # Prediction logic
+├── Dockerfile          # Docker configuration
+└── requirements.txt    # Project dependencies
+\```
 
 Implementation Details & Separation of Logic:
 1. Advanced Data Validation (Pydantic)
